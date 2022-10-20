@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model deployment</title>
+</head>
+<body>
+    <form action="{{url_for('predict')}}"method="post">
+        LIMIT BAL : <input type="text" name="LIMIT_BAL" placeholder="Enter Limit balance:"><br>
+        Sex:        <input type="text" name="SEX" placeholder="Enter 1 for male, 2 for:"><br>
+        Education:  <input type="text" name="EDUCATION" placeholder="Enter your education:"><br>
+        Marriage:   <input type="text" name="MARRIAGE" placeholder="Enter your Marriage status:"><br>
+        Age:        <input type="text" name="AGE" placeholder="Enter your Age:"><br>
+        Pay_0:      <input type="text" name="PAY_0" placeholder="Enter your Pay_0:"><br>
+        
+    
+    
+    <button type="submit">Submit</button>
+
+
+    </form>
+    <h3><br>{{prediction_text}}</h3>
+</body>
+</html>
